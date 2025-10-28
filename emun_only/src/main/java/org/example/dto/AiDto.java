@@ -16,6 +16,7 @@ public class AiDto {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class PostInput {
+        private Long id;
         private String promptMsg;
         private String apiKey;
         private String url;
@@ -23,7 +24,7 @@ public class AiDto {
         private ResponseType responseType;
         private long durationMs;
         private LocalDateTime searchDateTime;
-
+        private String user;
     }
 
     @Data
@@ -31,6 +32,7 @@ public class AiDto {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class PostOutput {
+        private Long id;
         private String promptMsg;
         private String apiKey;
         private String url;
@@ -38,6 +40,6 @@ public class AiDto {
         private ResponseType responseType;
         private long durationMs;
         private LocalDateTime searchDateTime;
-
+        private String user;
     }
 }
